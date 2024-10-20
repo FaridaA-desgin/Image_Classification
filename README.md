@@ -1,2 +1,40 @@
-# Image_Classification
-The objective of this research project is to help prevent the misdiagnosis of different cancer diseases, to do so we will be focusing on image recognition. The models that will be used in this study are  Deep Neural Network, Convolutional Neural Networks, Random Forests, Support Vector Machines, and Logistic Regression. 
+# Image Classification on Commonly Misdiagnosed Cancers
+
+***To read the full research paper please go here https://docs.google.com/document/d/16myX10uw1TfsOlJIU4_Hr2g6ZJKe6jkb7wXyMCEYExE/edit?usp=sharing ***
+
+Cancer misdiagnosis is frequently caused by flaws or human error in the testing process. Cancer misdiagnosis occurs as a result of false positive and false negative test results. False positive cancer test results indicate the presence of cancer when the patient does not have cancer. Depending on the study, data shows that doctors misdiagnose cancer in about 46% of patients (Aaronson et al, 2019). Furthermore, some medical researchers believe the true numbers are higher because many incorrect diagnoses go unreported or are not pursued through legal action. While doctors can misdiagnose almost any type of cancer, some are more prone to errors than others. Some cancers have symptoms that are similar to those of other diseases. The objective of this research project is to help prevent the misdiagnosis of different cancer diseases, to do so we will be focusing on image recognition. The models that will be used in this study are  Convolutional Neural Network(CNN): Sequential model, VGG16 model, and Residual Network (ResNet50) Model. 
+
+There are many procedures doctors perform to diagnose someone with cancer. The NCI (National Cancer Institute) explains the stages and processes that doctors will take in cancer diagnosis. Lab tests are one of them. High or low levels of certain substances in someone's body can be a sign of cancer. So lab tests of blood, urine, and other body fluids are measured for these substances to help doctors make a diagnosis. However, abnormal lab results are not a sure sign of cancer.  Imaging tests are also done to create pictures of areas inside the body that help the doctor see whether a tumor is present. Imaging tests are another component of the diagnostic process, as they provide visual representations of internal body areas, aiding doctors in identifying the presence of tumors. These pictures can be made in several ways such as a computed tomography scan (CT scan), Magnetic resonance imaging (MRI), ultrasound, and X-rays. In most cases, a biopsy is performed to obtain a definitive diagnosis. During a biopsy, a sample of abnormal tissue is extracted by the doctor. A pathologist then examines the tissue sample under a microscope and conducts additional tests on the cells within the sample. The findings are subsequently documented in a comprehensive pathology report, which provides detailed information regarding the diagnosis. This report serves as a valuable resource in determining suitable treatment options based on the identified cancer type.
+
+It can be difficult to determine whether a diagnosis is correct at times. A patient who does not improve or worsen after being treated for a specific disease may have been misdiagnosed. Even when the diagnosis is correct, treatment methods do not always produce the desired outcome. This is where machine learning comes in to help add to the percentage of true positives and decrease the number of false negatives and false positives.  This of course is said with respect to doctors who have spent hours and years learning how to properly diagnose and treat several different illnesses. The purpose of machine learning is to assist doctors and make their jobs slightly easier. We will be looking into a number of cancers that are commonly misdiagnosed. The cancers that will be discussed in this study are pancreatic cancer, breast cancer, lung cancer, pneumonia, bladder cancer, and prostate cancer. In the context of pancreatic cancer, misdiagnoses are commonly attributed to gallbladder disease (Hart et at, 2018). While bladder cancer often is misdiagnosed as prostate cancer(Schloegel et at, 2020). Likewise, lung cancer is often misdiagnosed as pneumonia (Yuping & Youngjun, 2021), and breast cancer is commonly mistaken for mastitis (Kang & Zhang, 2022). There are quite a few studies done on medical imaging but none on different misdiagnosed cancers/diseases. The aim of this study is to create a machine-learning algorithm that medical professionals can use to narrow down a patient's symptoms to help properly diagnose them.
+
+# Literature Review
+The Murtaza et al 2020 paper is a topic study that is a good tool and resource for anyone interested in studying the performance of various models in the research area of cancer misdiagnosis. The topic review attempts to gauge the state of the methods and processes involved with medical imaging prevention specifically with breast cancer. The article finds that as the focus of papers shifted from the 2014-18 era, more and more researchers began to opt for more publicly used datasets in order to keep the integrity, quality, and size of imaging data for consistent results and observations in changes. Another reason why this topic review is essential for anyone interested in this topic, not only does it review a vast number of studies......
+
+# Methods
+The models that were used are from the Convolutional Neural Network (CNN) Models. CNNs are a type of deep learning model that is effective with image classification, object detection, and image segmentation. The VGG16 model is a series of stack convolutional layers, followed by max pooling layers. The model uses 16 layers, 13 convolutional layers and 3 fully connected layers. The 13 convolutional layers extract the most important features from the input image, features such as shape, textures and detect patterns. The max pooling layers are then used to downsample the output of the convolutional layers and reduce the dimensions of the features while retaining the most important features. The 3 fully connected layers at the end of the model will take the most important features learned from the convolutional layers and use them to make predictions. This model is the most popular out of the three because it is simple, it's great for complex classification of images. The model was pre-trained on the large-scale ImageNet dataset, which contains millions of labeled images from various categories. The convolutional layers of this model uses 3x3 filters by pushing the depth to 16-19 weight layers making it 138 trainable parameters (Simonyan & Zisserman, 2015).  The model got its name from the Visual Geometry Group (VGG) at the University of Oxford and the 16 from the 16 layers. The model is widely used for image classification tasks. 
+
+Figure 1a: VGG16 Model Architecture
+<img width="480" alt="Figure 1a" src="https://github.com/user-attachments/assets/91a7044b-bd6f-4c79-a020-21983b74934c">
+
+The Sequential model is a linear stack of layers, with each layer related to the layer before and after it. It is named "sequential" because data flows sequentially through the model, from the input layer through the hidden levels to the output layer. The model learns hierarchical representations of the input photos by stacking layers progressively, allowing precise categorization of distinct objects or patterns within the images. The sequential model is an empty model that allows the user to add layers one by one in the desired order. The first layer added becomes the input layer, and the rest of the layers are connected in  sequence. Below is the layers of the Sequential Model that will be implemented in this study:
+
+1. A 16 filter convolutional layer
+
+2. A max pooling layer -for downsampling features 
+
+3. A 32 filter convolutional layer
+
+4. A max pooling layer
+
+5. A 16 filter convolutional layer 
+
+6. A max pooling Layer 
+
+7. A dense layer with 256 unit which are the fully connected layers 
+
+8. A lastly one unit dense layer is add to get the models output
+
+The Sequential approach simplifies and intuitively builds deep neural networks for image classification problems. It is crucial to note, however, that the Sequential model is limited to feedforward architectures and may not be appropriate......
+
+***To read the full research paper please go here https://docs.google.com/document/d/16myX10uw1TfsOlJIU4_Hr2g6ZJKe6jkb7wXyMCEYExE/edit?usp=sharing ***
