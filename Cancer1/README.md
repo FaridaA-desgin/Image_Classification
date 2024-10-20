@@ -5,6 +5,6 @@ Mastitis is a type of infection and inflammation of the breast tissue that mostl
 
 Figure 2b: BreastCancer & Mastitis Image Comparison
 
-![Figure 2b](https://github.com/user-attachments/assets/0c6d5bb8-9bd7-44ca-a242-d82ad77f409b)
+![Figure 2b](https://github.com/user-attachments/assets/6d569f04-ed51-4a30-8f86-7e06ec4da297)
 
 Figure 2b, contains the visualization of Breast cancer and Mastitis and shows why they are commonly misdiagnosed even if symptoms aren't exactly the same. 
