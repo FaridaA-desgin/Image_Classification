@@ -5,7 +5,6 @@ Gallstones are stones that occur in the gallbladder, which is a tiny pear-shaped
 
 Figure 2c: Pancreatic Cancer & Gallstones Image Comparison
 
-
-
+![Figure 2c](https://github.com/user-attachments/assets/bf50e67b-24d3-4fe4-8bf6-a8e8468cd470)
 
 Figure 2c, contains the visualization of Pancreatic cancer and Gallstones and shows why they are commonly misdiagnosed even if symptoms aren't exactly the same. 
